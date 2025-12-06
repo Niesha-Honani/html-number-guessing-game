@@ -1,19 +1,39 @@
 <!DOCTYPE html>
   <head>
     <meta charset="utf-8">
-    <title>TITLE</title>
+    <title>Guessing Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Your link to your CSS file -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="styles.css">
     <!-- Your Javascript file goes here -->
-    <script src="" async defer></script>
+    
   </head>
   <body>
     <!-- your HTML should go here -->
     <nav>
       <h1>Let's Play the Guessing Number Game!</h1>
     </nav>
-
+    <div id="guess-card">
+      <label for="guess">Make a Guess: </label>
+      <input id="guess" name = "guess" type="text" required minlength="4" maxlength="8" size="10"/>
+      <button onclick="number_guess()">Submit</button>
+      <div id="current-guess"></div>
+      <div id="guesses"></div>
+    </div>
+    <div id="hidden-card">
+      <div id="guess-history"></div>
+    </div>
 
   </body>
+  <script src="app.js">
+    //assign input to a variable
+    // compare to math.random() number
+    // if there is a match reveal the card number
+    //if the guess gets to 10 
+    //reveal the card
+    //if get card correct in 1 add money else minue b/10 == 0
+    //win return remainder into a bank variable and return total game
+    //make button that will play again
+
+  </script>
 </html>
